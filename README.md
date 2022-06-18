@@ -1,2 +1,2 @@
-# Assignment02-COMP22
- 
+Assignment 02
+Web Application
