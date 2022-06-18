@@ -10,7 +10,7 @@
         <div>
             <a href="/inventory/add" class="btn btn-primary align-self-end" role="button">
                 <i class="fas fa-plus-circle"></i> 
-                Add a New Contact
+                Add a new Item
             </a>                
         </div>
 
@@ -18,11 +18,11 @@
             <table class="table table-bordered table-striped table-hover">
                 <!-- Header Row-->
                 <tr>
-                    <th class="text-center">Name</th>
-                    <th class="text-center">Contact Number</th>
-                    <th class="text-center">Email Address</th>
-                    
-                    <th class="text-center">Company Name</th>
+                    <th class="text-center">Item</th>
+                    <th class="text-center">Qty</th>
+                    <th class="text-center">Status</th>
+                    <th>Size</th>
+                    <th class="text-center">Tags</th>
                     <th class="text-center" colspan="2">Actions</th>
                 </tr>
 
@@ -33,7 +33,11 @@
                         <td class="text-center"><%= InventoryList[count].item %></td>
                         <td class="text-center"><%= InventoryList[count].qty %></td>
                         <td class="text-center"><%= InventoryList[count].status %></td>
-                       
+                        <!-- <td>
+                            Hight: <%= InventoryList[count].size.h %><br/>
+                            Width: <%= InventoryList[count].size.w %><br/>
+                            UOM: <%= InventoryList[count].size.uom %><br/>
+                        </td> -->
                         <td class="text-center"><%= InventoryList[count].tags %></td>
                         <td class="text-center">
                             <a href="/inventory/edit/<%= InventoryList[count]._id %>" class="btn btn-primary btn-sm">

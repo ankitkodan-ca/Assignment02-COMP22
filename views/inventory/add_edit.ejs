@@ -4,7 +4,7 @@
 <div class="container">
     <div class="row">
         <div class="offset-md-3 col-md-6">
-            <h1><%= title %></h1>
+            <h1>Add New Business Contact</h1>
 
             <form class="form" method="POST">
                 <div class="form-group">
@@ -15,7 +15,7 @@
                     <label for="itemTextField">Full Name</label>
                     <input type="text" class="form-control"
                         id="itemTextField"
-                        placeholder="Please enter the Full Name"
+                        placeholder="Enter the Full Name"
                         name="item" 
                         value="<%= item.item %>"
                         required>
@@ -25,28 +25,65 @@
                     <label for="QtyTextField">Contact Number</label>
                     <input type="number" class="form-control"
                     id="QtyTextField"
-                    placeholder="(000)000-0000"
+                    placeholder="(000) 000-0000"
                     name="qty" 
                     value="<%= item.qty %>"
                     required>
                 </div>
                 <br />
                 <div class="form-group">
-                    <label for="statusTextField">Email Address</label>
+                    <label for="statusTextField">Email</label>
                     <input type="text" class="form-control"
                     id="statusTextField"
-                    placeholder=" Please enter email address"
+                    placeholder="Enter the Email Address"
                     name="status" 
                     value="<%= item.status %>"
                     >
-                </div>               
+                </div>
                 <br />
+                <!-- <div class="card">
+                    <div class="card-header">Size</div>
+                    <div class="card-body">
+                        <div class="form-group">
+                            <label for="hightTextField">Hight</label>
+                            <input type="number" step="0.01" 
+                            class="form-control"
+                            id="hightTextField"
+                            placeholder="0.00"
+                            name="size_h" 
+                            value="<%= item.size.h %>"
+                            required>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="widthTextField">Width</label>
+                            <input type="number" step="0.01"
+                            class="form-control"
+                            id="widthTextField"
+                            placeholder="0.00"
+                            name="size_w" 
+                            value="<%= item.size.w %>"
+                            required>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="uomTextField">Hight</label>
+                            <input type="text" class="form-control"
+                            id="uomTextField"
+                            placeholder="cm"
+                            name="size_uom" 
+                            value="<%= item.size.uom %>"
+                            required>
+                        </div>
+                    </div>                    
+                </div>                
+                <br /> -->
                 <div class="form-group">
-                    <label for="tagTextArea">Company Name</label>
+                    <label for="tagTextArea">Company Name </label>
                     <textarea type="text" class="form-control"
                     id="tagTextArea"
-                    placeholder="Enter the company name"
-                    name="company name" 
+                    placeholder="Enter the tags of the item"
+                    name="tags" 
                     required>
                     <%= item.tags %>
                     </textarea>
